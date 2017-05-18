@@ -9,3 +9,39 @@ input {
 	border-style: 2px solid black;
 	border-radius: 4px;
 }
+
+input[type=radio],
+input.radio {
+  float: left;
+  clear: none;
+  margin: 2px 0 0 2px;
+}
+
+p {
+	font-family: helvetica;
+}
+
+.entry {
+	background-color: #dadada;
+	border: 1px solid black;
+	border-radius: 4px;
+	display: inline-block;
+	width: 30%;
+	padding: 10px;
+	margin: 0px auto;
+}
+
+.img-render {
+	margin: 10px;
+	width: 80%;
+	height: auto;
+
+}
+
+h2 {
+	font-family: helvetica;
+}
+
+body {
+	background-color: grey;
+}
