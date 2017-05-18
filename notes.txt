@@ -1,0 +1,15 @@
+
+As a user, the first page I see contains the title of the website, and a question. The question being "Who are you?" the possible answers being "cosplayer, ect"
+As a user, the next page I see is a nice and large search bar prompting me to input the fandom i am looking for. 
+As a user, I can type in a fandom/movie/tv show and submit, and receive a list of Etsy store related items
+As a user, when I search, I start to hear a related movie soundtrack (if available)
+As a user, when I search, the page background/theme changes depending on certain searches
+As a user, I can select an item from the search results and it brings them to the etsy page (maybe more, depending on API limits).
+
+User seaches for a movie related topic on Etsy, and while they search for that, the soundtrack of the movie pops up to be played while searching.
+User can select what they're looking for through a drop down selector. "I am a: (cosplayer, prop collector, normie)"
+
+
+
+Backburner:
+	 when a user searches for a certain movie, it changes all the colors of the page to colors that are related to that movie.

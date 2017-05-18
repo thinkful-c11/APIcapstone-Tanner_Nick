@@ -1,0 +1,11 @@
+h1 {
+	text-align: center;
+	font-family: helvetica;
+	font-size: 2em;
+	font-weight: 600;
+}
+
+input {
+	border-style: 2px solid black;
+	border-radius: 4px;
+}
