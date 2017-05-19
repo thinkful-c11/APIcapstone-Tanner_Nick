@@ -6,6 +6,10 @@ As a user, when I search, I start to hear a related movie soundtrack (if availab
 As a user, when I search, the page background/theme changes depending on certain searches
 As a user, I can select an item from the search results and it brings them to the etsy page (maybe more, depending on API limits).
 
+
+
+
+
 User seaches for a movie related topic on Etsy, and while they search for that, the soundtrack of the movie pops up to be played while searching.
 User can select what they're looking for through a drop down selector. "I am a: (cosplayer, prop collector, normie)"
 
