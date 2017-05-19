@@ -83,7 +83,16 @@ const renderState = (state)=>{ //renders the state
 
 
 const listeners = ()=>{
-	$('#button-container').on('click', (event)=>{ //listens to the submit button
+	$('#button-container').on('click', (event)=>{ //listens to the submit button.
+		event.preventDefault();
+		let checkedVal =$("#userCategory option:selected" ).val(); //gets the value of the chosen category, giving that value to the updateCategory function.
+		const userInput = $('.js-query').val(); //gets the user's input to then be passed to our getDataFromApi, that will then be used as the search term.
+		updateCategory(appState, checkedVal);
+		pageViewUpdater(appState); //changes the pageView from 0 to 1, when we re-render it will then show the results.
+		getDataFromApi(userInput, modState);
+	})
+
+	$('.js-filters').submit((event)=>{ //listens for a submit via the enter key.
 		event.preventDefault();
 		let checkedVal =$("#userCategory option:selected" ).val(); //gets the value of the chosen category, giving that value to the updateCategory function.
 		const userInput = $('.js-query').val(); //gets the user's input to then be passed to our getDataFromApi, that will then be used as the search term.
