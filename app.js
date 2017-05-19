@@ -54,6 +54,7 @@ const renderState = (state)=>{
 	let html = ``;
 	if (state.pageView===0) {
 			html += `
+			<div class="wrapper">
 			<div class="inline1"><h2>I am a </h2></div> 
 			<div class="inline2"><form class="js-form"><select class="select" id="userCategory">
 			<option value=" " disabled selected>Select your option</option>
@@ -63,7 +64,7 @@ const renderState = (state)=>{
   			<option value=" "><p>General Consumer</p></option>
 			</select> <h2>and I am a fan of </h2>
 			<input type="text" class="js-query input">
-			</form></div><div id="button-container"><button class="button" type="submit">Search</button></div> `;
+			</form></div></div><div id="button-container"><button class="button" type="submit">Search</button></div> `;
 			$('.js-filters').html(html);
 	} else if (state.pageView===1) {
 		appState.results.forEach(function(object){

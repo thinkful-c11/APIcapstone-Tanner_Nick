@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+.wrapper2 {
+	text-align: center;
+}
+
 h1 {
 	text-align: center;
 	font-family: 'Paytone One';
@@ -15,10 +19,7 @@ h2 {
 	font-size: 1.5;
 }
 
-.js-filters {
-	position: relative;
-	left: 23%;
-}
+
 
 .inline1{
 	display: inline-block;
@@ -33,8 +34,7 @@ h2 {
 }
 
 .button {
-	position: relative;
-	left: 15%;
+
 	padding: 10px 100px;
 	margin: 20px 0;
 	border-radius: 4px;
