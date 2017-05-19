@@ -1,9 +1,6 @@
 const appState = {
 	results: []
-	// searchTerm: "star wars",
-	// category: " props",
-	// api_key: "detvzuhzwwcbxd902sabhaf6",
-	// etsyURL: "https://openapi.etsy.com/v2/listings/active.js?keywords="+terms+category"&limit=12&includes=Images:1&api_key="+api_key;
+
 }
 
 
@@ -14,10 +11,10 @@ const getDataFromApi = (searchTerm, checkedVal, callback)=>{
     etsyURL = `https://openapi.etsy.com/v2/listings/active.js?keywords=${searched}%20${category}&limit=12&includes=Images:1&api_key=${api_key}`;
 
 	$.ajax({
-		method: 'GET',
 		dataType: 'jsonp',
 		url: etsyURL,
 		success: function(data){
+			console.log(data);
 			callback(data);
 		}
 	})
@@ -39,15 +36,14 @@ const modState = (data)=>{
 }
 
 const renderState = (state)=>{
-	let html = ``;
 	appState.results.forEach(function(object){
-		html += `<div class="entry">
+		let html = `<div class="entry">
 		<h2>${object.title}</h2>
 		<img class="img-render" src="${object.image}">
 		</div>
 		`
+		$('#js-etsy-results').append(html);
 	})
-	$('#js-etsy-results').html(html);
 }
 
 const listeners = ()=>{
