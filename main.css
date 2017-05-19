@@ -14,13 +14,17 @@ h1 {
 	font-size: 3em;
 	font-weight: 600;
 }
-
 h2 {
 	display: inline-block;
 	font-weight: 600;
 	font-size: 1.5;
+	font-family: helvetica;
 }
-
+p {
+	font-family: helvetica;
+	font-size: 1.2em;
+	font-weight: 600;
+}
 select {
 	padding: 8px;
 	border-radius: 4px;
@@ -30,11 +34,9 @@ select {
 	font-weight: 600;
 	font-size: 1.2em;
 }
-
 option {
 	display: inline-block;
 }
-
 input {
 	border: 2px solid #e2e2e2;
 	border-radius: 4px;
@@ -43,27 +45,16 @@ input {
 	font-family: helvetica;
 	font-weight: 600;
 	font-size: 1.2em;
-
 }
-
-
-p {
-	font-family: helvetica;
-	font-size: 1.2em;
-	font-weight: 600;
-}
-
 .wrapper {
 	text-align: center;
 }
-
 .inline1{
 	display: inline-block;
 }
 .inline2{
 	display: inline-block;
 }
-
 .js-etsy-results {
 	position: absolute;
 	left: 10%;
@@ -112,8 +103,4 @@ p {
 	width: 100%;
 	height: auto;
 	margin-bottom: 0px;
-}
-
-h2 {
-	font-family: helvetica;
 }
