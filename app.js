@@ -53,22 +53,23 @@ const modState = (data)=>{
 const renderState = (state)=>{
 	let html = ``;
 	if (state.pageView===0) {
-			html += `<h2>I am a </h2><form class="js-form">
-			<select id="userCategory">
+			html += `
+			<div class="inline1"><h2>I am a </h2></div> 
+			<div class="inline2"><form class="js-form"><select class="select" id="userCategory">
 			<option value=" " disabled selected>Select your option</option>
-  			<option value="cosplay">Cosplayer</option>
-  			<option value="props">Prop Collector</option>
-  			<option value="vintage">Vintage Enthusiast</option>
-  			<option value=" ">Normie</option>
+  			<option value="cosplay costume"><p>Cosplayer</p></option>
+  			<option value="collectible prop"><p>Prop Collector</p></option>
+  			<option value="vintage rare collectible"><p>Vintage Enthusiast</p></option>
+  			<option value=" "><p>General Consumer</p></option>
 			</select> <h2>and I am a fan of </h2>
-			<input type="text" class="js-query">
-			</form> `;
+			<input type="text" class="js-query input">
+			</form></div><div id="button-container"><button class="button" type="submit">Search</button></div> `;
 			$('.js-filters').html(html);
 	} else if (state.pageView===1) {
 		appState.results.forEach(function(object){
 			html += `<div class="entry">
-				<h2>${object.title}</h2>
-				<a href="${object.url}" target="_blank" ><img class="img-render" src="${object.image}"></a>
+				<div class="entry-title"><p>${object.title}</p></div>
+				<div class="entry-img"><a href="${object.url}" target="_blank" ><img class="img-render" src="${object.image}"></a></div>
 				</div>`;
 	})
 	$('#js-etsy-results').html(html);
@@ -77,10 +78,11 @@ const renderState = (state)=>{
 
 
 const listeners = ()=>{
-	$('.js-form').submit((event)=>{
+	$('#button-container').on('click', (event)=>{
 		event.preventDefault();
 		let checkedVal =$("#userCategory option:selected" ).val();
-		const userInput = $(event.target).find('.js-query').val();
+		const userInput = $('.js-query').val();
+		console.log(userInput);
 		categoryMod(appState, checkedVal);
 		pageViewCounter(appState);
 		getDataFromApi(userInput, modState);

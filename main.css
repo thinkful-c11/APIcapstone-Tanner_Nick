@@ -1,42 +1,119 @@
+* {
+	box-sizing: border-box;
+}
+
 h1 {
 	text-align: center;
-	font-family: helvetica;
-	font-size: 2em;
+	font-family: 'Paytone One';
+	font-size: 3em;
 	font-weight: 600;
 }
 
+h2 {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 1.5;
+}
+
+.js-filters {
+	position: relative;
+	left: 23%;
+}
+
+.inline1{
+	display: inline-block;
+}
+.inline2{
+	display: inline-block;
+}
+
+.js-etsy-results {
+	position: absolute;
+	left: 10%;
+}
+
+.button {
+	position: relative;
+	left: 15%;
+	padding: 10px 100px;
+	margin: 20px 0;
+	border-radius: 4px;
+	border: 2px solid #e2e2e2;
+	background-color: white;
+	font-family: helvetica;
+	font-weight: 600;
+	font-size: 1.2em;
+}
+
+.select:hover {
+	border: 2px solid #75aaff;
+}
+
+.input::hover {
+	border: 2px solid #75aaff;
+}
+
+.button:hover {
+	border: 2px solid #75aaff;
+}
+
+select {
+	padding: 8px;
+	border-radius: 4px;
+	border: 2px solid #e2e2e2;
+	display: inline-block;
+	margin: 0 3px 0 3px;
+	font-weight: 600;
+	font-size: 1.2em;
+}
+
+option {
+	display: inline-block;
+}
 
 input {
-	border-style: 2px solid black;
+	border: 2px solid #e2e2e2;
 	border-radius: 4px;
+	padding: 6px;
+	margin: 0 0 0 3px;
+	font-family: helvetica;
+	font-weight: 600;
+	font-size: 1.2em;
+
 }
 
-input[type=radio],
-input.radio {
-  float: left;
-  clear: none;
-  margin: 2px 0 0 2px;
-}
 
 p {
 	font-family: helvetica;
+	font-size: 1.2em;
+	font-weight: 600;
 }
 
 .entry {
-	background-color: #dadada;
-	border: 1px solid black;
+	background-color: white;
 	border-radius: 4px;
 	display: inline-block;
-	width: 30%;
+	width: 24%;
+	max-height: 380px;
+	height: 380px;
 	padding: 10px;
-	margin: 0px auto;
+	overflow: hidden;
+	margin: 5px;
+	border: 2px solid #e2e2e2;
+}
+
+.entry-title {
+	height: 30%;
+}
+
+.entry-img {
+	height: 70%;
 }
 
 .img-render {
-	margin: 10px;
-	width: 80%;
+	width: 100%;
 	height: auto;
-
+	margin-bottom: 0px;
 }
 
 h2 {
@@ -44,5 +121,7 @@ h2 {
 }
 
 body {
-	background-color: grey;
+	background-color: #fcfcfc;
+	background: url(http://www.designbolts.com/wp-content/uploads/2012/12/White-wall-Seamless-Pattern-For-Website-Background.jpg);
+	background-size: repeat;
 }
