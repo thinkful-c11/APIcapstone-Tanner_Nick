@@ -67,7 +67,7 @@ const renderState = (state)=>{ //renders the state
   			<option value="vintage rare collectible"><p>Vintage Enthusiast</p></option>
   			<option value=" "><p>General Consumer</p></option>
 			</select> <h2>and I am a fan of </h2>
-			<input type="text" class="js-query input">
+			<input type="text" class="js-query">
 			</form></div></div><div id="button-container"><button class="button" type="submit">Search</button></div> `;
 			$('.js-filters').html(html);
 	} else if (state.pageView===1) { //if the user clicks the submit button, the pageViewUpdater function is called, setting the page view equal to 1.

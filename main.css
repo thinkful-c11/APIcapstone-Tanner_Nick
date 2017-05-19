@@ -2,8 +2,10 @@
 	box-sizing: border-box;
 }
 
-.wrapper2 {
-	text-align: center;
+body {
+	background-color: #fcfcfc;
+	background: url(http://www.designbolts.com/wp-content/uploads/2012/12/White-wall-Seamless-Pattern-For-Website-Background.jpg);
+	background-size: repeat;
 }
 
 h1 {
@@ -17,44 +19,6 @@ h2 {
 	display: inline-block;
 	font-weight: 600;
 	font-size: 1.5;
-}
-
-
-
-.inline1{
-	display: inline-block;
-}
-.inline2{
-	display: inline-block;
-}
-
-.js-etsy-results {
-	position: absolute;
-	left: 10%;
-}
-
-.button {
-
-	padding: 10px 100px;
-	margin: 20px 0;
-	border-radius: 4px;
-	border: 2px solid #e2e2e2;
-	background-color: white;
-	font-family: helvetica;
-	font-weight: 600;
-	font-size: 1.2em;
-}
-
-.select:hover {
-	border: 2px solid #75aaff;
-}
-
-.input::hover {
-	border: 2px solid #75aaff;
-}
-
-.button:hover {
-	border: 2px solid #75aaff;
 }
 
 select {
@@ -89,6 +53,40 @@ p {
 	font-weight: 600;
 }
 
+.wrapper {
+	text-align: center;
+}
+
+.inline1{
+	display: inline-block;
+}
+.inline2{
+	display: inline-block;
+}
+
+.js-etsy-results {
+	position: absolute;
+	left: 10%;
+}
+
+.button {
+	padding: 10px 100px;
+	margin: 20px 0;
+	border-radius: 4px;
+	border: 2px solid #e2e2e2;
+	background-color: white;
+	font-family: helvetica;
+	font-weight: 600;
+	font-size: 1.2em;
+}
+
+.select:hover {
+	border: 2px solid #75aaff;
+}
+.button:hover {
+	border: 2px solid #75aaff;
+}
+
 .entry {
 	background-color: white;
 	border-radius: 4px;
@@ -118,10 +116,4 @@ p {
 
 h2 {
 	font-family: helvetica;
-}
-
-body {
-	background-color: #fcfcfc;
-	background: url(http://www.designbolts.com/wp-content/uploads/2012/12/White-wall-Seamless-Pattern-For-Website-Background.jpg);
-	background-size: repeat;
 }
