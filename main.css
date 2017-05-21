@@ -15,7 +15,7 @@ h1 {
 	font-weight: 600;
 }
 h2 {
-	display: inline-block;
+	display: inline;
 	font-weight: 600;
 	font-size: 1.5;
 	font-family: helvetica;
@@ -49,10 +49,7 @@ input {
 .wrapper {
 	text-align: center;
 }
-.inline1{
-	display: inline-block;
-}
-.inline2{
+.inline-block{
 	display: inline-block;
 }
 .js-etsy-results {
